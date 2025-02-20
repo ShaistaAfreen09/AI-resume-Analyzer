@@ -31,14 +31,14 @@ pip install -r requirements.txt
 streamlit run App.py
 
 ## 📌 Usage
-1️⃣ Upload a resume (PDF/DOCX).
-2️⃣ The AI extracts and analyzes relevant details.
-3️⃣ Get a summary of key skills, experience, and job fit.
+1️⃣**Upload a resume (PDF/DOCX).**
+2️⃣**The AI extracts and analyzes relevant details.**
+3️⃣**Get a summary of key skills, experience, and job fit.**
 
 ## 📈 Future Enhancements
-🔹 Resume scoring based on job descriptions
-🔹 AI-powered suggestions for resume improvement
-🔹 Integration with LinkedIn for profile analysis
+🔹**Resume scoring based on job descriptions.**
+🔹**AI-powered suggestions for resume improvement.**
+🔹**Integration with LinkedIn for profile analysis.**
 
 ## 🤝 Contributing
 Contributions are welcome! Fork the repo, make improvements, and submit a pull request.

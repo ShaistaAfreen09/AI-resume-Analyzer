@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        /* Upload Section */
+        .upload-section {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .upload-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 5%;
+            background: #f9f9f9;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+        }
+
+        /*
+
+        /* Footer */
+        footer {
+            background: #f9f9f9;
+            padding: 4rem 5%;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #000;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #000;
+            border: 1px solid #000;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">AI Resume Analyzer</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Optimize Your Resume with<br>AI-Powered Analysis</h1>
+        <p>Get instant feedback, ATS compatibility score, and personalized recommendations to improve your resume and land your dream job.</p>
+        <button class="btn btn-primary">Analyze Your Resume</button>
+        <button class="btn btn-secondary">Learn More</button>
+    </section>
+
+    <div class="upload-section">
+        <div class="upload-icon">⬆️</div>
+        <h3>Drop your resume here</h3>
+        <p>Supports PDF and DOCX formats</p>
+        <button class="btn btn-primary">Upload Resume</button>
+    </div>
+
+    <section class="features" id="features">
+        <h2>Powerful Features</h2>
+        <p>Our AI-powered resume analyzer provides comprehensive analysis and actionable insights.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>AI Analysis</h3>
+                <p>Advanced AI algorithms analyze your resume for optimal content and formatting.</p>
+            </div>
+            <div class="feature-card">
+                <h3>ATS Score</h3>
+                <p>Get detailed ATS compatibility scores and improvement suggestions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Course Recommendations</h3>
+                <p>Personalized course suggestions to enhance your skills and qualifications.</p>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h2>50K+</h2>
+                <p>Resumes Analyzed</p>
+            </div>
+            <div class="stat-card">
+                <h2>85%</h2>
+                <p>Success Rate</p>
+            </div>
+            <div class="stat-card">
+                <h2>24/7</h2>
+                <p>AI Support</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>Success Stories</h2>
+        <p>See what our users have to say about their experience.</p>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <h4>Sarah Johnson</h4>
+                <p>Software Engineer</p>
+                <p>The AI analysis helped me optimize my resume and land my dream job at a top tech company!</p>
+            </div>
+            <div class="testimonial-card">
+                <h4>Michael Chen</h4>
+                <p>Data Scientist</p>
+                <p>The course recommendations were spot-on and helped me fill crucial skill gaps in my resume.</p>
+            </div>
+            <div class="testimonial-card">
+                <h4>Emily Brown</h4>
+                <p>Product Manager</p>
+                <p>I saw a significant improvement in my interview callbacks after using the ATS optimization features.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>AI Resume Analyzer</h3>
+                <p>Empowering job seekers with AI-powered resume optimization.</p>
+            </div>
+            <div>
+                <h4>Product</h4>
+                <p>Features</p>
+                <p>FAQ</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Careers</p>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // File Upload Handling
+        const uploadSection = document.querySelector('.upload-section');
+        const uploadButton = uploadSection.querySelector('.btn');
+
+        uploadSection.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadSection.style.borderColor = '#000';
+        });
+
+        uploadSection.addEventListener('dragleave', () => {
+            uploadSection.style.borderColor = '#ccc';
+        });
+
+        uploadSection.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadSection.style.borderColor = '#ccc';
+            const files = e.dataTransfer.files;
+            handleFiles(files);
+        });
+
+        uploadButton.addEventListener('click', () => {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.pdf,.docx';
+            input.onchange = (e) => handleFiles(e.target.files);
+            input.click();
+        });
+
+        function handleFiles(files) {
+            // Here you can add your backend integration
+            console.log('Files received:', files);
+            // Example: Send to backend
+            // const formData = new FormData();
+            // formData.append('resume', files[0]);
+            // fetch('/api/analyze-resume', {
+            //     method: 'POST',
+            //     body: formData
+            // });
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

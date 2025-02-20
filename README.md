@@ -1,27 +1,27 @@
-## 🧠 AI Resume Analyzer
-A smart, AI-powered tool that analyzes resumes, extracts key details, and evaluates candidate suitability using NLP.
+# 🧠 AI Resume Analyzer  
 
-## 🚀 Features
-✅ Resume Parsing – Extracts candidate details (name, skills, experience, education, etc.)
-✅ Skill Matching – Compares extracted skills with job requirements
-✅ NLP-Based Analysis – Uses Spacy & NLTK for text processing and keyword extraction
-✅ Web Interface – Streamlit-based UI for easy resume upload and insights
-✅ Flask Backend – Handles API requests for resume processing
-✅ Database Storage – Stores and retrieves parsed resumes using MySQL
+A smart, AI-powered tool that analyzes resumes, extracts key details, and evaluates candidate suitability using NLP.  
 
-## 🔧 Tech Stack
-Frontend: Streamlit
-Backend: Flask
-NLP: Spacy, NLTK
-Database: MySQL
-Programming Language: Python
+## 🚀 Features  
 
-## 🛠 Installation
-bash
-Copy
-Edit
+✅ **Resume Parsing** – Extracts candidate details (name, skills, experience, education, etc.)  
+✅ **Skill Matching** – Compares extracted skills with job requirements  
+✅ **NLP-Based Analysis** – Uses Spacy & NLTK for text processing and keyword extraction  
+✅ **Web Interface** – Streamlit-based UI for easy resume upload and insights  
+✅ **Flask Backend** – Handles API requests for resume processing  
+✅ **Database Storage** – Stores and retrieves parsed resumes using MySQL  
+
+## 🔧 Tech Stack  
+
+- **Frontend:** Streamlit  
+- **Backend:** Flask  
+- **NLP:** Spacy, NLTK  
+- **Database:** MySQL  
+- **Programming Language:** Python  
+
+## 🛠 Installation  
 # Clone the repo
-git clone (https://github.com/ShaistaAfreen09/AI-resume-Analyzer)
+git clone https://github.com/ShaistaAfreen09/AI-resume-Analyzer
 cd AI-Resume-Analyzer
 
 # Install dependencies
